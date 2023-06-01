@@ -1,0 +1,135 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255);
+}
+
+:root {
+  --color-black: rgb(0, 0, 0, 0.65);
+  --color-black-second: rgb(0, 0, 0, 0.45)
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: Times New Roman;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.header_right {
+  display: flex;
+}
+
+.header_right a {
+  margin-right: 10px;
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+.header_right .active {
+  color: rgb(34,80,230);
+  text-decoration: underline;
+}
+
+.header_right a:hover {
+  text-decoration: underline;
+  color: rgb(34,80,230);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.feature img {
+  width: 210px;
+  height: auto;
+}
+
+.search {
+  width: 90%;
+  margin-top: 15px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search_input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  border-radius: 99px;
+  border: 1px solid var(--color-black);
+}
+
+.search_input:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+}
+.search_input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+.search_action {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.search_action button {
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search_action button:hover:active {
+  border: 1px solid var(--color-black-second);
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.language a {
+  margin-right: 6px;
+}
+
+.material-icons {
+  color: rgba(32,33,36,255);
+}
+
+.tombol {
+  display: flex;
+  margin-bottom: 40px;
+}
